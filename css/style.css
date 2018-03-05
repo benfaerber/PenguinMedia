@@ -1,0 +1,69 @@
+/* Sections */
+
+body {
+  color: #8e5000;
+  font-weight: 400;
+  font-size: 1em;
+  font-family: Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+  padding-bottom:40px;
+}
+
+a {
+  color: #b76800;
+}
+
+a:hover, a:focus {
+  color: #e58200;
+}
+
+.content {
+  margin-left: 25px;
+}
+
+.cata {
+  font-size: 20px;
+  list-style-image: url('/img/bullet.png');
+}
+
+/* Sticky Navigation */
+
+.ccsticky-nav {
+  width: 100%;
+  height: 80px; 
+  position: fixed; 
+  top: 0;
+  background: #8e5000;
+}
+
+.ccsticky-nav ul {
+  padding: 20px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: left;
+}
+.ccsticky-nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.ccsticky-nav ul li a {
+  padding: 10px 0;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+.ccsticky-nav ul li a:hover {
+  color: #b76800;
+}
+
+.dir {
+  font-size: 30px;
+  list-style-type: none;
+}
+
+.dir.ul {
+  
+}
