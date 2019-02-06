@@ -64,7 +64,11 @@ function clean($base)
           }
         }
         $back = "loader.php?c=" . $_GET['c'] . "&w=" . $path . $na[$ind-1] . "&ff=" . $na[$ind-1];
-        $forw = "loader.php?c=" . $_GET['c'] . "&w=" . $path . $na[$ind+1] . "&ff=" . $na[$ind+1];
+        if ($ind+1 < count($na))
+        {
+          $forw = "loader.php?c=" . $_GET['c'] . "&w=" . $path . $na[$ind+1] . "&ff=" . $na[$ind+1];
+        }
+        
         if ($ind != 2)
         {
           echo "<a href='" . $back . "'><img src='img/left.png' width='50px'></a> ";
