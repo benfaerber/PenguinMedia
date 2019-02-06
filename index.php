@@ -119,23 +119,25 @@ function books($dir, $rex)
 
 <div class="content">
 <?php
-$cat = $_GET['c'];
+if(isset($_GET['c'])) {
+  $cat = $_GET['c'];
 
-if ($cat == "tv")
-{
-  ls("media/tv", true);
-}
-else if ($cat == "movies")
-{
-  ls("media/movies", true);
-}
-else if ($cat == "music")
-{
-  ls("media/music", true);
-}
-else if ($cat == "books")
-{
-  books("media/books", true);
+  if ($cat == "tv")
+  {
+    ls("media/tv", true);
+  }
+  else if ($cat == "movies")
+  {
+    ls("media/movies", true);
+  }
+  else if ($cat == "music")
+  {
+    ls("media/music", true);
+  }
+  else if ($cat == "books")
+  {
+    books("media/books", true);
+  }
 }
 ?>
 
